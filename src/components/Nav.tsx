@@ -1,4 +1,3 @@
-
 import { View, StyleSheet, Text } from 'react-native';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import Fontisto from '@expo/vector-icons/Fontisto';
@@ -33,10 +32,13 @@ export default function Nav() {
         flex: 4,
         flexDirection: "row",
         backgroundColor:"#faf3f2",
-        
+        marginBottom: 0,
+        marginTop: 0,
+        marginLeft: 0,
+        marginRight: 0,
       },
       nav:{
         alignItems: "center",
-        padding: 12,
+        padding: 15,
       },
 });

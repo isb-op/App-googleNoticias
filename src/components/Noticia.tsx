@@ -25,7 +25,7 @@ export function Noticia({ logo, titulo, hora, imagem }: NoticiaProps) {
 
 const styles = StyleSheet.create({
     container: {
-        padding: 16,
+        padding: 10,
         backgroundColor: "#FFFFFF",
         borderRadius: 8,
         shadowColor: "#000",
@@ -48,10 +48,12 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: "600",
         marginHorizontal: 2,
+        fontFamily: "Roboto",
     },
     hora: {
         color: "gray",
         fontSize: 12,
+        fontFamily: "Roboto",
     },
     figura: {
         width: 80,
