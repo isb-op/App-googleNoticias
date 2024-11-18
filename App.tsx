@@ -1,20 +1,61 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+// import { View } from "react-native"
+import { ScrollView, View,  StyleSheet, Text  } from "react-native";
+import { Noticia } from "./src/components/Noticia";
+import { dados } from "./src/components/dados";
+import AntDesign from '@expo/vector-icons/AntDesign';
+import Nav from "./src/components/Nav";
 
 export default function App() {
-  return (
+  return(
+
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <ScrollView>
+        <View style={styles.titulo}>  
+              <Text style={styles.titulo_texto}> 
+                Notícias locais
+              </Text>
+              <AntDesign name="rightcircle" size={24} color="#176e7f"/>
+        </View>
+      {dados.map((noticia, index) => 
+        (<Noticia 
+        key={index}
+        logo={noticia.logo}
+        titulo={noticia.titulo} 
+        hora={noticia.hora}
+        imagem={noticia.imagem}
+        />
+        ))}
+
+        <View style={styles.footer}>
+          <Nav />
+        </View>
+      </ScrollView>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+const styles= StyleSheet.create({
+  container:{
+    flex:1,
+    padding:20,
   },
+  titulo:{
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    paddingTop: 30,
+  },
+  titulo_texto:{
+    color: "#176e7f",
+    fontSize:25, 
+    padding: 15,
+  },
+  footer:{
+    position: 'absolute',  
+    bottom: 0,
+    left: 0,
+    right: 0,
+    backgroundColor: "#faf3f2",
+  },
+
 });
