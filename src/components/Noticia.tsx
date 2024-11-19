@@ -5,7 +5,7 @@ type NoticiaProps = {
     titulo: string;
     hora: string;
     imagem: string;
-    link: string; // Novo campo para o link da notícia
+    link: string; 
 };
 
 export function Noticia({ logo, titulo, hora, imagem, link }: NoticiaProps) {
@@ -14,7 +14,6 @@ export function Noticia({ logo, titulo, hora, imagem, link }: NoticiaProps) {
             console.error("Não foi possível abrir o link:", err)
         );
     };
-
     return (
         <TouchableOpacity onPress={openLink}>
             <View style={styles.container}>
