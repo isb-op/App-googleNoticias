@@ -15,7 +15,7 @@ export const dados = [
     },
     {
         logo: "https://seeklogo.com/images/L/logomarca-g1-logo-B7B8057DF2-seeklogo.com.png",
-        titulo: "Escritórios de advocacia demitem estagiários acusados de praticar atos racistas em jogos universitários no interior de SP",
+        titulo: "Escritórios de advocacia demitem estagiários acusados de praticar atos racistas...",
         hora: "1 hora atrás",
         imagem: "https://s2-g1.glbimg.com/R-mjR8B0K1spsP-pomlhzXLHAik=/0x0:832x571/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/R/C/8JHD1tRpa8z3Ab6zMMyg/tatiane.jpg",
         link: "https://g1.globo.com/sp/sao-paulo/noticia/2024/11/18/escritorio-de-advocacia-demite-estagiaria-acusada-de-praticar-atos-racistas-em-jogos-universitarios-no-interior-de-sp.ghtml",

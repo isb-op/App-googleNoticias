@@ -51,10 +51,11 @@ const styles = StyleSheet.create({
         width: 40,
         height: 40, 
         resizeMode: "contain", 
+        marginTop: 0,
     },
     titulo: {
         flex: 1,
-        fontSize: 20,
+        fontSize: 18,
         fontWeight: "600",
         marginHorizontal: 2,
         fontFamily: "Roboto",
@@ -63,6 +64,7 @@ const styles = StyleSheet.create({
         color: "gray",
         fontSize: 12,
         fontFamily: "Roboto",
+        paddingTop: 20,
     },
     figura: {
         width: 80,
