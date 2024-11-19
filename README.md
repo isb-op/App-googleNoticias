@@ -25,7 +25,7 @@ O objetivo é praticar habilidades em **React Native**, incluindo:
 ## 🖼 **Comparação de Telas**
 
 ### Tela Original:
-![Tela do Google Notícias](https://play-lh.googleusercontent.com/uvHqqMywhv0NF9CXX-6684114iFsd0rIqjeClTuwuE26WujHSHRyvKFNWpEjQ580LQ=w2560-h1440-rw)
+![Tela do Google Notícias](https://i.ibb.co/YhtYnBC/novogoogle.png)
 
 ### Tela Criada:
 ![Recriando a tela do Google Notícias](https://i.ibb.co/X2MgbcS/new.jpg)
