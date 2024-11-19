@@ -1,4 +1,4 @@
-import { View, StyleSheet, Text } from 'react-native';
+import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import Fontisto from '@expo/vector-icons/Fontisto';
 import Feather from '@expo/vector-icons/Feather';
@@ -8,8 +8,8 @@ export default function Nav() {
     return(
         <View style={styles.footerNav}>
             <View style={styles.nav}>
-                <MaterialCommunityIcons name="star-four-points-outline" size={24} color="gray" />
-                <Text>Para você</Text>
+                <MaterialCommunityIcons name="star-four-points-outline" size={24} color="#176e7f" />
+                <Text style={styles.titulo}>Para você</Text>              
             </View>
             <View style={styles.nav}>
                 <Fontisto name="world-o" size={24} color="gray" />
@@ -31,14 +31,14 @@ export default function Nav() {
     footerNav:{
         flex: 4,
         flexDirection: "row",
-        backgroundColor:"#faf3f2",
-        marginBottom: 0,
-        marginTop: 0,
-        marginLeft: 0,
-        marginRight: 0,
+        backgroundColor:"#FFFFFF",
       },
       nav:{
         alignItems: "center",
         padding: 15,
+        fontFamily: "Roboto",
       },
+      titulo: {
+        color: "#176e7f",
+      }
 });

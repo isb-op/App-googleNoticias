@@ -24,6 +24,7 @@ export default function App() {
         titulo={noticia.titulo} 
         hora={noticia.hora}
         imagem={noticia.imagem}
+        link={noticia.link}
         />
         ))}
          <View style={styles.linha} />
@@ -43,7 +44,7 @@ const styles= StyleSheet.create({
   container:{
     flex:1,
     padding:20,
-    backgroundColor: "white",
+    backgroundColor: "#FFFFFF",
   },
   titulo:{
     flexDirection: "row",
@@ -71,5 +72,4 @@ const styles= StyleSheet.create({
     backgroundColor: "#e0e0e0", 
     marginTop: 10, 
 },
-
 });

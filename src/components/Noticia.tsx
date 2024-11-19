@@ -1,25 +1,34 @@
-import { Text, View, StyleSheet, Image } from "react-native";
+import { Text, View, StyleSheet, Image, TouchableOpacity, Linking } from "react-native";
 
 type NoticiaProps = {
     logo: string;
     titulo: string;
     hora: string;
     imagem: string;
+    link: string; // Novo campo para o link da notícia
 };
 
-export function Noticia({ logo, titulo, hora, imagem }: NoticiaProps) {
+export function Noticia({ logo, titulo, hora, imagem, link }: NoticiaProps) {
+    const openLink = () => {
+        Linking.openURL(link).catch((err) =>
+            console.error("Não foi possível abrir o link:", err)
+        );
+    };
+
     return (
-        <View style={styles.container}>
-            <Image source={{ uri: logo }} style={styles.logo} />
-            <View style={styles.row}>
-                <Text style={styles.titulo}>{titulo}</Text>
-                <Image source={{ uri: imagem }} style={styles.figura} />
+        <TouchableOpacity onPress={openLink}>
+            <View style={styles.container}>
+                <Image source={{ uri: logo }} style={styles.logo} />
+                <View style={styles.row}>
+                    <Text style={styles.titulo}>{titulo}</Text>
+                    <Image source={{ uri: imagem }} style={styles.figura} />
+                </View>
+                <View style={styles.row}>
+                    <Text style={styles.hora}>{hora}</Text>
+                </View>
+                <View style={styles.linha} />
             </View>
-            <View style={styles.row}>
-                <Text style={styles.hora}>{hora}</Text>
-            </View>
-            <View style={styles.linha} />
-        </View>
+        </TouchableOpacity>
     );
 }
 
@@ -32,6 +41,7 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.1,
         shadowRadius: 4,
         shadowOffset: { width: 0, height: 2 },
+        marginBottom: 10,
     },
     row: {
         flexDirection: "row",
