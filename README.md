@@ -28,7 +28,7 @@ O objetivo é praticar habilidades em **React Native**, incluindo:
 ![Tela do Google Notícias](https://play-lh.googleusercontent.com/uvHqqMywhv0NF9CXX-6684114iFsd0rIqjeClTuwuE26WujHSHRyvKFNWpEjQ580LQ=w2560-h1440-rw)
 
 ### Tela Criada:
-![Recriando a tela do Google Notícias](https://i.ibb.co/NCqM1v4/Screenshot-2024-11-18-20-26-04-670-host-exp-exponent.jpg)
+![Recriando a tela do Google Notícias](https://i.ibb.co/X2MgbcS/new.jpg)
 
 ---
 
